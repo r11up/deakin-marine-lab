@@ -1,0 +1,6 @@
+# Quantum machine learning stack (furseal.quantum modules).
+# Note: the original notebooks targeted qiskit 0.44/0.45 with the now-removed
+# Aqua API; the code in src/furseal/quantum is ported to the modern API below.
+qiskit>=1.0,<2.0
+qiskit-machine-learning>=0.8
+qiskit-aer

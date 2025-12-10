@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "furseal"
+version = "0.1.0"
+description = "Fur seal individual identification with classical and quantum machine learning (Deakin University / Tulip Lab capstone)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Deakin University Capstone Project — Tulip Lab" }]
+keywords = ["fur seal", "animal re-identification", "quantum machine learning", "QSVM", "SAM", "YOLOv5"]
+
+dependencies = [
+    "numpy",
+    "Pillow",
+    "opencv-python",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "tqdm",
+    "PyYAML",
+    "torch",
+    "torchvision",
+    "albumentations",
+]
+
+[project.optional-dependencies]
+quantum = [
+    "qiskit>=1.0,<2.0",
+    "qiskit-machine-learning>=0.8",
+    "qiskit-aer",
+]
+sam = [
+    "segment-anything @ git+https://github.com/facebookresearch/segment-anything.git",
+]
+dev = [
+    "pytest",
+]
+
+[project.scripts]
+furseal-balance = "furseal.data.balance:main"
+furseal-crop-faces = "furseal.data.crop_faces:main"
+furseal-resize = "furseal.data.resize:main"
+furseal-augment = "furseal.data.augment:main"
+furseal-yolo = "furseal.detection.yolo:main"
+furseal-sam-mask = "furseal.segmentation.sam_mask:main"
+furseal-morphology = "furseal.segmentation.morphology:main"
+furseal-embeddings = "furseal.features.embeddings:main"
+furseal-cluster = "furseal.features.clustering:main"
+furseal-train = "furseal.classical.train:main"
+furseal-evaluate = "furseal.classical.evaluate:main"
+furseal-pegasos = "furseal.quantum.pegasos:main"
+furseal-qsvm = "furseal.quantum.qsvm:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

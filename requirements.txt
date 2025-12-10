@@ -1,0 +1,14 @@
+# Core dependencies for the classical pipeline.
+# Install everything (incl. quantum + SAM) with:
+#   pip install -e ".[quantum,sam]"
+numpy
+Pillow
+opencv-python
+matplotlib
+seaborn
+scikit-learn
+tqdm
+PyYAML
+torch
+torchvision
+albumentations

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv/
+venv/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & artefacts (datasets and trained weights are not versioned)
+data/*
+!data/README.md
+*.pth
+*.pt
+*.npy
+*.npz
+sam_vit_*.pth
+yolov5/
+runs/
+eval_outputs/
+tsne_clusters.png
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
