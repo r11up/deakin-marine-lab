@@ -1,0 +1,41 @@
+# Default configuration for the fur seal recognition pipeline.
+# All paths are relative to data_root (override with FURSEAL_DATA_ROOT or
+# per-script --data-root / --src / --dst arguments).
+
+data_root: data
+
+dataset:
+  # Individuals in the study; folder names in the per-class datasets.
+  classes: [A, B, C, D, E, F, G, H]
+  target_per_class: 10        # images per individual after balancing
+  augmentations_per_image: 3  # albumentations variants per masked image
+
+detection:
+  img_size: 416
+  batch: 16
+  epochs: 150
+  weights: yolov5s.pt
+  conf_threshold: 0.1
+
+segmentation:
+  sam_checkpoint: sam_vit_h_4b8939.pth
+  sam_model_type: vit_h
+  morph_kernel_size: 4
+  morph_threshold: 50
+
+classifier:
+  epochs: 10
+  batch_size: 16
+  lr: 0.0001
+  val_fraction: 0.2
+
+quantum:
+  image_size: 128   # images resized to image_size x image_size grayscale
+  n_qubits: 7       # amplitude encoding: 2^7 = 128 features
+  test_size: 0.25
+  pegasos_C: 1.0
+  pegasos_num_steps: 1000
+  qsvm_pca_components: 2
+  qsvm_feature_map_reps: 2
+
+seed: 42

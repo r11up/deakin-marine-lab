@@ -1,0 +1,17 @@
+# YOLOv5 dataset definition for seal face detection.
+# Place this next to your YOLO-format dataset and pass it to:
+#   python -m furseal.detection.yolo train --data configs/detection_data.yaml
+#
+# Expected layout:
+#   data/datasets/
+#     train/images/*.jpg   train/labels/*.txt
+#     valid/images/*.jpg   valid/labels/*.txt
+#     test/images/*.jpg    test/labels/*.txt
+
+path: ../data/datasets
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ["face"]
