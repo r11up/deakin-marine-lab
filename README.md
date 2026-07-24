@@ -24,6 +24,9 @@ monitoring: it replaces physical tagging, which is stressful for the animals
 and expensive for researchers.
 
 ## Approach
+<img width="450" height="471" alt="Screenshot 2026-07-24 at 10 18 09 pm" src="https://github.com/user-attachments/assets/6119c4f2-171e-4cca-9bfe-c6aa9d43c14e" />
+<img width="676" height="243" alt="Screenshot 2026-07-24 at 10 17 36 pm" src="https://github.com/user-attachments/assets/a30f385a-6c68-439d-aca4-20e49d31bec7" />
+
 
 The project combines a classical deep-learning pipeline with quantum machine
 learning experiments, and compares them on the same data:
