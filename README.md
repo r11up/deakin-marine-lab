@@ -25,6 +25,9 @@ and expensive for researchers.
 
 ## Approach
 <img width="450" height="471" alt="Screenshot 2026-07-24 at 10 18 09 pm" src="https://github.com/user-attachments/assets/6119c4f2-171e-4cca-9bfe-c6aa9d43c14e" />
+<img width="456" height="307" alt="Screenshot 2026-07-24 at 10 42 28 pm" src="https://github.com/user-attachments/assets/e557b4ae-0552-42e4-84bd-cee5b5ef433f" />
+
+
 <img width="676" height="243" alt="Screenshot 2026-07-24 at 10 17 36 pm" src="https://github.com/user-attachments/assets/a30f385a-6c68-439d-aca4-20e49d31bec7" />
 
 
@@ -130,6 +133,9 @@ python -m furseal.quantum.qsvm    --data data/reduced_masked_dataset_128x128
 
 Console-script aliases (`furseal-train`, `furseal-sam-mask`, `furseal-pegasos`,
 …) are installed alongside the package — see `pyproject.toml`.
+
+<img width="661" height="375" alt="Screenshot 2026-07-24 at 10 42 37 pm" src="https://github.com/user-attachments/assets/7a26c1e6-5b60-4767-bee1-9cd6c24083e2" />
+
 
 ## Notes on the quantum code
 
