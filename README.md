@@ -1,4 +1,4 @@
-# Fur Seal Face Recognition — Classical & Quantum Machine Learning
+# Fur Seal Face ReIdentification | Classical & Quantum Machine Learning
 
 Individual identification of marine fur seals from field photographs, developed
 as a capstone project at **Deakin University** in collaboration with the
